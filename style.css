@@ -59,11 +59,16 @@ section {
 }
 
 .project {
-    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 33.33%; /* Set the width to one-third of the container's width */
+    padding: 50px;
+    margin: 10px;
+    border: 1px solid #ddd;
 }
-
 
 img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    display: block; /* Remove any extra spacing around the image */
 }
+
