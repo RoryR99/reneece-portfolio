@@ -23,6 +23,7 @@
     .image-gallery img {
         width: calc(33.33% - 10px);
         margin: 0;
+        border: 1px solid #ccc; /* Add border to images */
     }
     .image-gallery img:last-child {
         margin-right: 0;
@@ -34,18 +35,34 @@
     }
     .lists-container {
         display: flex;
+        justify-content: space-between;
     }
     .list {
         flex: 1;
         margin-right: 20px;
+        border: 1px solid #ccc; /* Add border to lists */
+        padding: 10px;
     }
     .list ul {
         list-style: none;
         padding: 0;
     }
+    .list ul li {
+        margin-bottom: 5px; /* Add space between list items */
+    }
     .back-button {
         display: block;
-        margin-bottom: 20px;
+        margin: 20px auto; /* Center the back button */
+        padding: 10px 20px; /* Add padding to the back button */
+        font-size: 18px; /* Increase font size */
+        border: 2px solid #333; /* Add border to the back button */
+        border-radius: 5px; /* Add border-radius to the back button */
+        text-decoration: none; /* Remove underline */
+        color: #333; /* Text color */
+    }
+    .back-button:hover {
+        background-color: #333; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
     }
 </style>
 </head>
@@ -62,8 +79,7 @@
         <div class="list">
             <h2>Design Description</h2>
             <ul>
-                <li>This machine was developed to conduct failure analysis of bearings by collecting load, RPM and temperature data. 
-                  This was designed to be portable for use as a teaching aid at the University of Waterloo.</li>
+                <li>This machine was developed to conduct failure analysis of bearings by collecting load, RPM and temperature data.</li>
             </ul>
         </div>
         <div class="list">
@@ -87,3 +103,4 @@
 
 </body>
 </html>
+
