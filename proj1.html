@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    .image-gallery {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .image-gallery img {
+        width: calc(33.33% - 10px);
+        margin: 0;
+    }
+    .image-gallery img:last-child {
+        margin-right: 0;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .lists-container {
+        display: flex;
+    }
+    .list {
+        flex: 1;
+        margin-right: 20px;
+    }
+    .list ul {
+        list-style: none;
+        padding: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-gallery">
+        <img src="images/project1img1.png" alt="Image 1">
+        <img src="images/project1img2.png" alt="Image 2">
+        <img src="images/project1img3.png" alt="Image 3">
+    </div>
+    <h1 class="title">Bearing Testing Machine</h1>
+    <div class="lists-container">
+        <div class="list">
+            <h2>Design Description</h2>
+            <ul>
+                <li>This machine was developed to conduct failure analysis of bearings by collecting load, RPM and temperature data. 
+                  This was designed to be portable for use as a teaching aid at the University of Waterloo.</li>
+            </ul>
+        </div>
+        <div class="list">
+            <h2>Process</h2>
+            <ul>
+                <li>Parts were designed and assembled using SolidWorks and then made using a combination of 3D printing, laser cutting and machining.</li>
+                <li>Arduino code was developed, and electrical components were connected and soldered to ensure accurate readings.</li>
+            </ul>
+        </div>
+        <div class="list">
+            <h2>Results</h2>
+            <ul>
+                <li>Load cells provided accurate readings up to ±0.5kg of the force applied to the bearings.</li>
+                <li>Electronic housing allowed components to be protected during transport and use.</li>
+                <li>Design facilitated the addition of temperature sensors to provide a more detailed failure analysis.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
